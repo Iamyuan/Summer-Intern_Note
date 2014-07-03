@@ -33,10 +33,10 @@ NrRFi9wrf+M7Q== schacon@agadorlaptop.local`
 ------------
 
 
-1. 安裝好[git]之後，在[git bash],輸入`ssh-keygen -C “username@email.com” -t rsa`。
-2. 就如同上面234步驟，接著在commend line 驗證`ssh -T git@github.com`
-3. 然後也可以繼續按照上述56執行，或者提供另一方法，複製GitHub上的url, 然後回commend line輸入`git clone git@github.com:Iamyuan/Summer-Intern_Note.git`，即表示已設定了remote origin。
-1. 往後便可自由pull、push在 GitHub的檔案
+1. 安裝好[git]之後，在[git bash],輸入`ssh-keygen -C “username@email.com” -t rsa`此時c:\Users\yuan\.ssh 裡面有id_rsa 和id_rsa_pub.兩個檔案
+2. 就如同上面234步驟，然後也可以繼續按照上述56執行，或者提供另一方法，複製GitHub上的url, 然後回commend line輸入`git clone git@github.com:Iamyuan/Summer-Intern_Note.git`，即表示已設定了remote origin，且同時在c:\Users\yuan\.ssh 也會多一個know_hosts的檔案(裡面是public key的內容)。
+3. 也可在git bash輸入`ssh -T git@github.com` 檢查是否通過驗證
+1. 往後便可自由pull、push在 GitHub的檔案。
 
 **以上參考[windows使用ssh對GitHub進行操作], 關於產生SSH KEY, 也有其他方法:**
   
