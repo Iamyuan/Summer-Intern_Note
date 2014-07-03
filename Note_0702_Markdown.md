@@ -1,37 +1,30 @@
-##Part 1 - Markdown
+##Markdown
   
 ## 1. Words size
  
 ####When you write down...
 
 ```
+
 ###### H6 
-##### H5
-#### H4
-### H3
-## H2
 # H1
-Hell0
+Hell
 ===
 Hello
 ---
-(abc)
+
 ```
 
 
 ####What you see...
 
 ###### H6 
-##### H5
-#### H4
-### H3
-## H2
 # H1  
 Hell0
 ===
 Hello
 ---
-(acb)
+
 
 ## 2. Lists
 ####When you write down...
