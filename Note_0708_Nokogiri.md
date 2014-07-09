@@ -5,7 +5,7 @@
 
 
  Install
------------- 
+---------- 
   - 可參考[官網教學](http://nokogiri.org/tutorials/installing_nokogiri.html)
   - [個人推薦](https://blog.engineyard.com/2010/getting-started-with-nokogiri/)
 
@@ -23,8 +23,24 @@ HTML結構
 
 可知
 
+Reponse.code
+----
 
-`require 'nokogiri'`
-`require 'open-uri'`
+[reference](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+
+Code
+----
+```
+require 'nokogiri'
+
+require 'open-uri'
+
+doc = Nokogiri::HTML(open('response["location"]'))
+ doc.xpath('//h3/a').each do |node|
+      puts node.text
+end
+```
+
+[css](http://www.w3schools.com/css/)
 
 
