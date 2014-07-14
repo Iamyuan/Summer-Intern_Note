@@ -36,11 +36,23 @@ require 'nokogiri'
 require 'open-uri'
 
 doc = Nokogiri::HTML(open('response["location"]'))
- doc.xpath('//h3/a').each do |node|
-      puts node.text
+ doc.css('h3 a').each do |node|
+      puts node.text #title
+      puts node.body
+      puts node['href'] 
 end
 ```
 
+
+.class
+
+\#id
+
+
+['href']
+
 [css](http://www.w3schools.com/css/)
 
+
+[heroku](https://dashboard.heroku.com/apps)
 
