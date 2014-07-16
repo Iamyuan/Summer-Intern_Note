@@ -56,3 +56,8 @@ end
 
 [heroku](https://dashboard.heroku.com/apps)
 
+http://ruby.bastardsbook.com/chapters/html-parsing/
+
+http://www.freeformatter.com/html-formatter.html#ad-output
+
+
