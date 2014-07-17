@@ -73,4 +73,4 @@ Others
 3. 有關內容字體字型的編碼問題可參考[編碼學問大](http://blog.sammylin.tw/nokogiri-encoding/)
     → require 'iconv'  別忘記了
 4. 可重複使用.css()以篩選欲編輯的內容  ex : doc.css('li.g').css('h3 a.k')
-5. 當輸入任何內容欲轉成url格式時, `gem install uri_handler`  然後利用.to_uri即可 ex: a = "2*&^%$$".to_uri
+5. 當輸入任何內容欲[轉成url格式](http://stackoverflow.com/questions/6714196/ruby-url-encoding-string)時, `gem install uri_handler`  然後利用.to_uri即可 ex: a = "2*&^%$$".to_uri
