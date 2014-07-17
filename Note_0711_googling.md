@@ -42,9 +42,10 @@ Nokogiri
 ------------
 可參考[Nocogiri]
 
-整理程式(not finish)
+refactor
 ------------
-解釋模組. class
+
+
 
 Gem(not finish)
 ------
