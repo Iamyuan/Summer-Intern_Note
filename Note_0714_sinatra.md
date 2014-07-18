@@ -50,3 +50,56 @@ and run with
 ```ruby filename.rb```
 
 可得一個localhost，即可檢查結果。
+
+
+Start
+--------
+
+以下是主要的內容，包含了已寫完的googling,然後erb :search也
+
+    require 'sinatra'
+    require 'googling'
+
+    get '/search' do 
+      @q = params[:q]
+      #得到欲搜尋的變數q
+      @results = Googling.search(@q)
+      #使用先前寫的googling來執行剩下的動作(search和parse) 
+      erb :search
+      #用erb語法在/search顯示結果(詳細敘述請看view)
+    end
+
+View
+--------
+
+* 建立一個search.erb的檔案 sinatra_googling/views/search.erb`,本頁只會顯示結果，不包含邏輯計算的部分
+* 插入一個form, 然後將method改成get, 這樣所發送的就會在url中顯示，可做為紀錄和追蹤。若使用post則會將結果存在body之中。
+* <%  %>之內顯示的就是ruby語法 之外的就是html
+
+
+<h1>Enter the keywords</h1>
+<hr size="5" align="center" noshade width="90%" color="0000ff"><br>
+
+<form action="/search" method="get">
+  <input type="text" name="q"/>
+  <input type="submit"/>
+</form>  
+<table border=2>
+<td colspan=2 align=center><h2><b>=Search Result=<b><h2></td>
+<tr>
+<% @results.each do |node| %>
+  <td><b>Title<b></td>
+  <td><b><%= node.title %></b></td>
+  <tr>
+  <td>Link</td>
+  <td><a href="<%= node.link %>" target="_blank"><%= node.link %></a></td>
+  <tr>
+  <td>Description</td>
+  <td><%= node.description %></td><tr>
+ 
+<% end %>
+</table>
+
+[html](http://www.powmo.com/)
+
+[URL編碼](http://www.w3cschool.cc/tags/html-urlencode.html)
