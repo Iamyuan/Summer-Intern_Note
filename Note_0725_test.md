@@ -35,6 +35,13 @@ end
  2. [minitest quick reference](http://mattsears.com/articles/2011/12/10/minitest-quick-reference)
  
  3.[ruby](http://www.railstutorial.org/book/beginning#sec-comments_for_various_readers)
+
+ 4.[Project: RSpec Expectations 3.0](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs)
+
+http://www.motion-express.com/?p=2952
+
+http://vincent10e.github.io/blog/2014/03/09/rspec/
+
  
  
  
