@@ -32,13 +32,6 @@ end
 ```
 
 
-.class
-
-\#id
-
-
-['href']
-
 [css](http://www.w3schools.com/css/)
 
 
@@ -47,14 +40,15 @@ end
 http://ruby.bastardsbook.com/chapters/html-parsing/
 
 http://www.freeformatter.com/html-formatter.html#ad-output
-=======
+
+
 Remember to require
 -----------
 
 `require 'nokogiri'`
 
-`require 'open-uri'`
->>>>>>> 0f15fe5601238d1c270973e323ef125fc5b1a400
+`require 'open-uri'` Which can turn the word tothe form of url.
+
 
 
 Fetch the documents 
@@ -112,7 +106,4 @@ Others
 3. 有關內容字體字型的編碼問題可參考[編碼學問大](http://blog.sammylin.tw/nokogiri-encoding/)
     → require 'iconv'  別忘記了
 4. 可重複使用.css()以篩選欲編輯的內容  ex : doc.css('li.g').css('h3 a.k')
-<<<<<<< HEAD
-=======
 5. 當輸入任何內容欲[轉成url格式](http://stackoverflow.com/questions/6714196/ruby-url-encoding-string)時, `gem install uri_handler`  然後利用.to_uri即可 ex: a = "2*&^%$$".to_uri
->>>>>>> 2ffbb19831fa1e5ff6fe5d9c846921e7f6fd91e0

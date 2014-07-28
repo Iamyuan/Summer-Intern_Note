@@ -14,3 +14,19 @@ RSpec
 Mocks ---
 
 http://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry-part-2--cms-20290
+
+
+
+APIs
+=====
+crud
+data Wrangler
+[redis](http://redis.io/)
+[routes](http://guides.rubyonrails.org/routing.html)
+MongoDB(like MySOL but it can add row at will)
+rails
+resource
+matchs
+scope and namescape
+
+

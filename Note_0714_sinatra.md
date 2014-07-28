@@ -2,7 +2,9 @@
 ===========
 [bin](https://github.com/Iamyuan/googling/blob/master/bin/googling)
 -------
-於整理程式之後，將module.md放在[googling/lib/googling]，使用時務必'require' for example:
+於整理程式之後，將module.md放在[googling/lib/googling]，使用時務必'require' 
+
+for example:
 
 
     module Googling
@@ -73,9 +75,11 @@ View
 --------
 
 * 建立一個search.erb的檔案 sinatra_googling/views/search.erb`,本頁只會顯示結果，不包含邏輯計算的部分
-* 插入一個form, 然後將method改成get, 這樣所發送的就會在url中顯示，可做為紀錄和追蹤。若使用post則會將結果存在body之中。
+* 插入一個form, 然後將method改成get, 這樣所發送的就會在url中顯示，可做為紀錄和追蹤。若使用post則會將結果存在body之中。(Next text will introduce a different way.)
 * <%  %>之內顯示的就是ruby語法 之外的就是html
 
+Result
+--------
 
 <h1>Enter the keywords</h1>
 <hr size="5" align="center" noshade width="90%" color="0000ff"><br>
@@ -100,6 +104,8 @@ View
 <% end %>
 </table>
 
+Reference
+----------
 
 [html](http://www.powmo.com/)
 
